@@ -14,12 +14,12 @@ app.get('/api', (req, res) => {
   const current_time = moment().utc().format('YYYY-MM-DDTHH:mm:ss[Z]');
 
   // Define GitHub file and repo URLs
-  const github_file_url = 'https://github.com/username/repo/blob/main/file_name.ext';
-  const github_repo_url = 'https://github.com/username/repo';
+  const github_file_url = 'https://github.com/Ifalanga/StageOne/blob/main/slack-info-endpoint/internship_StageOne.js';
+  const github_repo_url = 'https://github.com/Ifalanga/StageOne';
 
   // Create the response JSON
   const response_json = {
-    slack_name : 'Ifalanga',
+    slack_name,
     current_day,
     utc_time: current_time,
     track,
